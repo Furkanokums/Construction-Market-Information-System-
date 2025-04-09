@@ -1,8 +1,3 @@
--- FURKAN OKUMUÞ
---STUDENT NO : 220201070
-
--- Homework Assignment #3 PART 1
-
 --CREATIONS
 Create Database  [Construction Market Information]
 
@@ -127,14 +122,14 @@ shippingCode int not null,
 shippingDate date,
 shippingPrice float,
 shippingAdress nvarchar(255),
-customerID int, -- FK = From Shýpping Service To Customer.
+customerID int, -- FK = From ShÃ½pping Service To Customer.
 Primary Key(shippingCode)
 )
 
 
 Create TABLE SHIPPING(
-shippingCode int not null, -- FK = From Shipping To Shýpping Service .
-barcode nvarchar(50) not null, -- FK = From Shýpping To Customer.
+shippingCode int not null, -- FK = From Shipping To ShÃ½pping Service .
+barcode nvarchar(50) not null, -- FK = From ShÃ½pping To Customer.
 Primary Key(shippingCode,barcode)
 )
 
