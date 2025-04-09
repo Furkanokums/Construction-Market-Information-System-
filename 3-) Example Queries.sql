@@ -35,10 +35,10 @@ WHERE managerID = 8;
 
 --(d) retrieve the tuples that satisfy some condition. Query should include the LIKE operator.
 
--- Query 1: Display all customers whose addressOfCustomer contains 'Konyaaltý'.
+-- Query 1: Display all customers whose addressOfCustomer contains 'KonyaaltÃ½'.
 SELECT * 
 FROM CUSTOMER 
-WHERE addressOfCustomer LIKE '%Konyaaltý%'
+WHERE addressOfCustomer LIKE '%KonyaaltÃ½%'
 
 -- Query 2: Display all employees whose first name starts with 'A'.
 SELECT * 
@@ -46,7 +46,7 @@ FROM EMPLOYEE
 WHERE firstName LIKE 'A%';
 
 
---(e) retrieve the tuples that satisfy some condition. Output should be sorted – sorting on a single attribute.
+--(e) retrieve the tuples that satisfy some condition. Output should be sorted â€“ sorting on a single attribute.
 
 -- Query 1: Display all employees with a salary greater than 3,0000, sorted by their date of birth.
 SELECT * 
@@ -61,7 +61,7 @@ WHERE price < 20000
 ORDER BY productName;
 
 
---(f) Retrieve the tuples that satisfy some condition. Output should be sorted – sorting on more than one attribute.
+--(f) Retrieve the tuples that satisfy some condition. Output should be sorted â€“ sorting on more than one attribute.
 
 -- Query 1: Display employees with a salary greater than 5000, sorted by salary (descending) and date of birth (ascending).
 SELECT * 
@@ -78,7 +78,7 @@ ORDER BY price DESC, productName;
 
 --(g) Retrieve the first 5 tuples of a relation.
 
---Query 1 :Display the first 5 “the most earning Employee”
+--Query 1 :Display the first 5 â€œthe most earning Employeeâ€
 SELECT TOP 5  firstName , lastName , salary
 FROM EMPLOYEE
 ORDER BY salary DESC;
